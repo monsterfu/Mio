@@ -27,9 +27,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (![self.navigationController.navigationBar respondsToSelector:@selector(setBarTintColor:)])
+    {
+        self.navigationController.navigationBar.tintColor = [UIColor getColor:@"63c463"];
+        self.navigationController.navigationBar.translucent = NO;
+    }else{
+        self.navigationController.navigationBar.barTintColor = [UIColor getColor:@"63c463"];
+        self.navigationController.navigationBar.translucent = NO;
+    }
+    
+    
     _settingNameArray = [NSArray arrayWithObjects:@"个人资料",@"Mio设置",@"佩戴位置",@"论坛",@"报表周期",@"隐私政策",@"关于我们", nil];
     _cellSelectionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, DEVICE_WIDTH, 44)];
-    _cellSelectionView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.3];
+    _cellSelectionView.backgroundColor = [UIColor getColor:@"63c463"];
 }
 
 - (void)didReceiveMemoryWarning

@@ -27,6 +27,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (![self.navigationController.navigationBar respondsToSelector:@selector(setBarTintColor:)])
+    {
+        self.navigationController.navigationBar.tintColor = [UIColor getColor:@"63c463"];
+        self.navigationController.navigationBar.translucent = NO;
+    }else{
+        self.navigationController.navigationBar.barTintColor = [UIColor getColor:@"63c463"];
+        self.navigationController.navigationBar.translucent = NO;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

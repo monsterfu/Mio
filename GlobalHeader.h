@@ -9,6 +9,8 @@
 #ifndef Mio_GlobalHeader_h
 #define Mio_GlobalHeader_h
 
+#import "UIColor+getColor.h"
+#import <MapKit/MapKit.h>
 
 #define VISION_NO    @"1.1.2"
 //#define NSLog(...) {}
