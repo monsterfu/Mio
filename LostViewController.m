@@ -27,14 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    if (![self.navigationController.navigationBar respondsToSelector:@selector(setBarTintColor:)])
-    {
-        self.navigationController.navigationBar.tintColor = [UIColor getColor:@"63c463"];
-        self.navigationController.navigationBar.translucent = NO;
-    }else{
-        self.navigationController.navigationBar.barTintColor = [UIColor getColor:@"63c463"];
-        self.navigationController.navigationBar.translucent = NO;
-    }
     
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -43,6 +35,10 @@
     rotationAnimation.cumulative = YES;
     rotationAnimation.repeatCount = 1000;
     [_imageView.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
+    
+    _mapView.layer.cornerRadius = 30.0f;
+    _mapView.layer.borderWidth = 1.0f;
+    _mapView.layer.borderColor = [[UIColor getColor:@"63c463"]CGColor];
 }
 
 - (void)didReceiveMemoryWarning

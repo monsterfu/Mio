@@ -1,18 +1,18 @@
 //
-//  MainViewController.m
+//  CommonTabbarViewController.m
 //  Mio
 //
-//  Created by 符鑫 on 14-8-26.
+//  Created by 符鑫 on 14-8-27.
 //  Copyright (c) 2014年 Monster. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "CommonTabbarViewController.h"
 
-@interface MainViewController ()
+@interface CommonTabbarViewController ()
 
 @end
 
-@implementation MainViewController
+@implementation CommonTabbarViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.tabBar setTintColor:[UIColor whiteColor]];
+    [self.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning

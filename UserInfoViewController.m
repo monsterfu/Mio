@@ -97,7 +97,11 @@
 //    if (indexPath.row == 0||indexPath.row == 1||indexPath.row == 2) {
 //        [self performSegueWithIdentifier:@"userInfoEditIdentifier" sender:nil];
 //    }
-    [self performSegueWithIdentifier:@"userInfoEditIdentifier" sender:nil];
+    if (indexPath.section == 0) {
+        [self performSegueWithIdentifier:@"userInfoEditIdentifier" sender:nil];
+    }else{
+        [self performSegueWithIdentifier:@"enterChangePswIdentifer" sender:nil];
+    }
 }
 #pragma mark - actionSheet delegate
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex

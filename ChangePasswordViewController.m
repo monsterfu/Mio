@@ -1,18 +1,18 @@
 //
-//  SettingViewController.m
+//  ChangePasswordViewController.m
 //  Mio
 //
-//  Created by 符鑫 on 14-8-26.
+//  Created by 符鑫 on 14-8-27.
 //  Copyright (c) 2014年 Monster. All rights reserved.
 //
 
-#import "SettingViewController.h"
+#import "ChangePasswordViewController.h"
 
-@interface SettingViewController ()
+@interface ChangePasswordViewController ()
 
 @end
 
-@implementation SettingViewController
+@implementation ChangePasswordViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,9 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _settingNameArray = [NSArray arrayWithObjects:@"个人资料",@"Mio设置",@"佩戴位置",@"论坛",@"报表周期",@"隐私政策",@"关于我们", nil];
-    _cellSelectionView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, DEVICE_WIDTH, 44)];
-    _cellSelectionView.backgroundColor = [UIColor getColor:@"63c463"];
+    UIView* view = [UIView new];
+    [view setBackgroundColor:[UIColor clearColor]];
+    [_tableView setTableFooterView:view];
+    _nameArray = @[@"当前密码",@"新的密码",@"确认密码"];
+    
+    UIImage* rightImg = [UIImage imageNamed:@"icon_2"];
+    UIBarButtonItem* _rightButton = [[UIBarButtonItem alloc]initWithImage:rightImg style:UIBarButtonItemStylePlain target:self action:@selector(rightButtonPressed)];
+    self.navigationItem.rightBarButtonItem = _rightButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +42,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)rightButtonPressed
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 /*
 #pragma mark - Navigation
 
@@ -51,30 +59,31 @@
 #pragma mark -UITbaleViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 1;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 0) {
-        return 3;
-    }else if(section == 1)
-    {
-        return 2;
-    }else
-        return 2;
+    return [_nameArray count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* settingCell = [tableView dequeueReusableCellWithIdentifier:[NSString stringWithFormat:@"settingCell%d",indexPath.row+1] forIndexPath:indexPath];
-    settingCell.selectedBackgroundView = _cellSelectionView;
-    return settingCell;
+    _changePswTableCell = [tableView dequeueReusableCellWithIdentifier:@"changePSWCell" forIndexPath:indexPath];
+    _changePswTableCell.name.text = [_nameArray objectAtIndex:indexPath.row];
+    if (indexPath.row == 1) {
+        [_changePswTableCell.detail becomeFirstResponder];
+    }
+    return _changePswTableCell;
 }
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 1) {
-    }
     
+}
+
+#pragma mark -UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    return YES;
 }
 @end

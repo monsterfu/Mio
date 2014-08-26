@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F9A558C19ACD737009E2E5C /* BEMAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558519ACD737009E2E5C /* BEMAnimations.m */; };
+		0F9A558D19ACD737009E2E5C /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558719ACD737009E2E5C /* BEMCircle.m */; };
+		0F9A558E19ACD737009E2E5C /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558919ACD737009E2E5C /* BEMLine.m */; };
+		0F9A558F19ACD737009E2E5C /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558B19ACD737009E2E5C /* BEMSimpleLineGraphView.m */; };
+		0F9A559319ACDB41009E2E5C /* icon_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A559019ACDB41009E2E5C /* icon_1@2x.png */; };
+		0F9A559419ACDB41009E2E5C /* icon_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A559119ACDB41009E2E5C /* icon_2@2x.png */; };
+		0F9A559519ACDB41009E2E5C /* icon_23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F9A559219ACDB41009E2E5C /* icon_23@2x.png */; };
+		0F9A559819ACE42D009E2E5C /* MioSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A559719ACE42D009E2E5C /* MioSettingViewController.m */; };
+		0F9A559B19ACE58E009E2E5C /* mioHJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A559A19ACE58E009E2E5C /* mioHJCell.m */; };
+		0F9A559E19ACEE5D009E2E5C /* CommonNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A559D19ACEE5D009E2E5C /* CommonNavigationController.m */; };
+		0F9A55A119ACF193009E2E5C /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A55A019ACF193009E2E5C /* ChangePasswordViewController.m */; };
+		0F9A55A719ACF1FB009E2E5C /* changePswCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A55A619ACF1FB009E2E5C /* changePswCell.m */; };
+		0F9A55AA19ACF6A3009E2E5C /* CommonTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A55A919ACF6A3009E2E5C /* CommonTabbarViewController.m */; };
 		643B33EA19AC5510004EAC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B33E919AC5510004EAC04 /* Foundation.framework */; };
 		643B33EC19AC5510004EAC04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B33EB19AC5510004EAC04 /* CoreGraphics.framework */; };
 		643B33EE19AC5510004EAC04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643B33ED19AC5510004EAC04 /* UIKit.framework */; };
@@ -40,9 +53,6 @@
 		643B347F19AC5774004EAC04 /* icon1 (6)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344519AC5774004EAC04 /* icon1 (6)@2x.png */; };
 		643B348019AC5774004EAC04 /* icon1 (7)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344619AC5774004EAC04 /* icon1 (7)@2x.png */; };
 		643B348119AC5774004EAC04 /* icon1 (8)@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344719AC5774004EAC04 /* icon1 (8)@2x.png */; };
-		643B348219AC5774004EAC04 /* icon_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344819AC5774004EAC04 /* icon_1.png */; };
-		643B348319AC5774004EAC04 /* icon_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344919AC5774004EAC04 /* icon_2.png */; };
-		643B348419AC5774004EAC04 /* icon_23.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344A19AC5774004EAC04 /* icon_23.png */; };
 		643B348519AC5774004EAC04 /* jingyin.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344B19AC5774004EAC04 /* jingyin.png */; };
 		643B348619AC5774004EAC04 /* jinru_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344C19AC5774004EAC04 /* jinru_03.png */; };
 		643B348719AC5774004EAC04 /* jinru_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 643B344D19AC5774004EAC04 /* jinru_06.png */; };
@@ -105,6 +115,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F9A558419ACD737009E2E5C /* BEMAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimations.h; sourceTree = "<group>"; };
+		0F9A558519ACD737009E2E5C /* BEMAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimations.m; sourceTree = "<group>"; };
+		0F9A558619ACD737009E2E5C /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		0F9A558719ACD737009E2E5C /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		0F9A558819ACD737009E2E5C /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		0F9A558919ACD737009E2E5C /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		0F9A558A19ACD737009E2E5C /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		0F9A558B19ACD737009E2E5C /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		0F9A559019ACDB41009E2E5C /* icon_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_1@2x.png"; sourceTree = "<group>"; };
+		0F9A559119ACDB41009E2E5C /* icon_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_2@2x.png"; sourceTree = "<group>"; };
+		0F9A559219ACDB41009E2E5C /* icon_23@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_23@2x.png"; sourceTree = "<group>"; };
+		0F9A559619ACE42D009E2E5C /* MioSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MioSettingViewController.h; sourceTree = "<group>"; };
+		0F9A559719ACE42D009E2E5C /* MioSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MioSettingViewController.m; sourceTree = "<group>"; };
+		0F9A559919ACE58E009E2E5C /* mioHJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mioHJCell.h; sourceTree = "<group>"; };
+		0F9A559A19ACE58E009E2E5C /* mioHJCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mioHJCell.m; sourceTree = "<group>"; };
+		0F9A559C19ACEE5D009E2E5C /* CommonNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonNavigationController.h; sourceTree = "<group>"; };
+		0F9A559D19ACEE5D009E2E5C /* CommonNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonNavigationController.m; sourceTree = "<group>"; };
+		0F9A559F19ACF193009E2E5C /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		0F9A55A019ACF193009E2E5C /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		0F9A55A519ACF1FB009E2E5C /* changePswCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = changePswCell.h; sourceTree = "<group>"; };
+		0F9A55A619ACF1FB009E2E5C /* changePswCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = changePswCell.m; sourceTree = "<group>"; };
+		0F9A55A819ACF6A3009E2E5C /* CommonTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTabbarViewController.h; sourceTree = "<group>"; };
+		0F9A55A919ACF6A3009E2E5C /* CommonTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTabbarViewController.m; sourceTree = "<group>"; };
 		643B33E619AC5510004EAC04 /* Mio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		643B33E919AC5510004EAC04 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		643B33EB19AC5510004EAC04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,9 +181,6 @@
 		643B344519AC5774004EAC04 /* icon1 (6)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1 (6)@2x.png"; sourceTree = "<group>"; };
 		643B344619AC5774004EAC04 /* icon1 (7)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1 (7)@2x.png"; sourceTree = "<group>"; };
 		643B344719AC5774004EAC04 /* icon1 (8)@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1 (8)@2x.png"; sourceTree = "<group>"; };
-		643B344819AC5774004EAC04 /* icon_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1.png; sourceTree = "<group>"; };
-		643B344919AC5774004EAC04 /* icon_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_2.png; sourceTree = "<group>"; };
-		643B344A19AC5774004EAC04 /* icon_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_23.png; sourceTree = "<group>"; };
 		643B344B19AC5774004EAC04 /* jingyin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jingyin.png; sourceTree = "<group>"; };
 		643B344C19AC5774004EAC04 /* jinru_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jinru_03.png; sourceTree = "<group>"; };
 		643B344D19AC5774004EAC04 /* jinru_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jinru_06.png; sourceTree = "<group>"; };
@@ -233,6 +263,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9A558319ACD737009E2E5C /* BemLine */ = {
+			isa = PBXGroup;
+			children = (
+				0F9A558419ACD737009E2E5C /* BEMAnimations.h */,
+				0F9A558519ACD737009E2E5C /* BEMAnimations.m */,
+				0F9A558619ACD737009E2E5C /* BEMCircle.h */,
+				0F9A558719ACD737009E2E5C /* BEMCircle.m */,
+				0F9A558819ACD737009E2E5C /* BEMLine.h */,
+				0F9A558919ACD737009E2E5C /* BEMLine.m */,
+				0F9A558A19ACD737009E2E5C /* BEMSimpleLineGraphView.h */,
+				0F9A558B19ACD737009E2E5C /* BEMSimpleLineGraphView.m */,
+			);
+			path = BemLine;
+			sourceTree = "<group>";
+		};
 		643B33DD19AC5510004EAC04 = {
 			isa = PBXGroup;
 			children = (
@@ -314,12 +359,18 @@
 		643B342119AC558C004EAC04 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A55A819ACF6A3009E2E5C /* CommonTabbarViewController.h */,
+				0F9A55A919ACF6A3009E2E5C /* CommonTabbarViewController.m */,
+				0F9A559C19ACEE5D009E2E5C /* CommonNavigationController.h */,
+				0F9A559D19ACEE5D009E2E5C /* CommonNavigationController.m */,
 				643B342319AC55A4004EAC04 /* LostViewController.h */,
 				643B342419AC55A4004EAC04 /* LostViewController.m */,
 				643B342519AC55A4004EAC04 /* MainViewController.h */,
 				643B342619AC55A4004EAC04 /* MainViewController.m */,
 				643B342719AC55A4004EAC04 /* SettingViewController.h */,
 				643B342819AC55A4004EAC04 /* SettingViewController.m */,
+				0F9A559619ACE42D009E2E5C /* MioSettingViewController.h */,
+				0F9A559719ACE42D009E2E5C /* MioSettingViewController.m */,
 				643B342919AC55A4004EAC04 /* TemperatureViewController.h */,
 				643B342A19AC55A4004EAC04 /* TemperatureViewController.m */,
 				643B342B19AC55A4004EAC04 /* UserInfoViewController.h */,
@@ -329,6 +380,8 @@
 				643B34B519AC74C4004EAC04 /* ImageCroperViewController.xib */,
 				643B34A719AC624A004EAC04 /* UserInfoEditViewController.h */,
 				643B34A819AC624A004EAC04 /* UserInfoEditViewController.m */,
+				0F9A559F19ACF193009E2E5C /* ChangePasswordViewController.h */,
+				0F9A55A019ACF193009E2E5C /* ChangePasswordViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -336,6 +389,9 @@
 		643B343219AC5774004EAC04 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A559019ACDB41009E2E5C /* icon_1@2x.png */,
+				0F9A559119ACDB41009E2E5C /* icon_2@2x.png */,
+				0F9A559219ACDB41009E2E5C /* icon_23@2x.png */,
 				643B34C519AC85A5004EAC04 /* fangdiu_11@2x.png */,
 				643B34C619AC85A5004EAC04 /* fangdiu_13@2x.png */,
 				643B34BF19AC8532004EAC04 /* fangdiu_03@2x.png */,
@@ -358,9 +414,6 @@
 				643B344519AC5774004EAC04 /* icon1 (6)@2x.png */,
 				643B344619AC5774004EAC04 /* icon1 (7)@2x.png */,
 				643B344719AC5774004EAC04 /* icon1 (8)@2x.png */,
-				643B344819AC5774004EAC04 /* icon_1.png */,
-				643B344919AC5774004EAC04 /* icon_2.png */,
-				643B344A19AC5774004EAC04 /* icon_23.png */,
 				643B344B19AC5774004EAC04 /* jingyin.png */,
 				643B344C19AC5774004EAC04 /* jinru_03.png */,
 				643B344D19AC5774004EAC04 /* jinru_06.png */,
@@ -404,6 +457,10 @@
 			children = (
 				643B34AB19AC65B8004EAC04 /* UserInfoEditCell.h */,
 				643B34AC19AC65B8004EAC04 /* UserInfoEditCell.m */,
+				0F9A559919ACE58E009E2E5C /* mioHJCell.h */,
+				0F9A559A19ACE58E009E2E5C /* mioHJCell.m */,
+				0F9A55A519ACF1FB009E2E5C /* changePswCell.h */,
+				0F9A55A619ACF1FB009E2E5C /* changePswCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -411,6 +468,7 @@
 		643B34B119AC73C0004EAC04 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				0F9A558319ACD737009E2E5C /* BemLine */,
 				643B34B719AC76E1004EAC04 /* UIColor+getColor */,
 				643B34B219AC7403004EAC04 /* BJImageCropper.h */,
 				643B34B319AC7403004EAC04 /* BJImageCropper.m */,
@@ -518,9 +576,9 @@
 				643B349019AC5774004EAC04 /* quan4.png in Resources */,
 				643B347E19AC5774004EAC04 /* icon1 (5)@2x.png in Resources */,
 				643B349619AC5774004EAC04 /* quan7.png in Resources */,
-				643B348319AC5774004EAC04 /* icon_2.png in Resources */,
 				643B34B619AC74C4004EAC04 /* ImageCroperViewController.xib in Resources */,
 				643B349A19AC5774004EAC04 /* quan9.png in Resources */,
+				0F9A559419ACDB41009E2E5C /* icon_2@2x.png in Resources */,
 				643B347D19AC5774004EAC04 /* icon1 (4)@2x.png in Resources */,
 				643B347B19AC5774004EAC04 /* icon1 (2)@2x.png in Resources */,
 				643B346D19AC5774004EAC04 /* about_icon.png in Resources */,
@@ -529,7 +587,6 @@
 				643B34A419AC5774004EAC04 /* zhuye_30@2x.png in Resources */,
 				643B347C19AC5774004EAC04 /* icon1 (3)@2x.png in Resources */,
 				643B340519AC5510004EAC04 /* Images.xcassets in Resources */,
-				643B348419AC5774004EAC04 /* icon_23.png in Resources */,
 				643B347619AC5774004EAC04 /* fangdiu_21.png in Resources */,
 				643B349E19AC5774004EAC04 /* zhuye_10@2x.png in Resources */,
 				643B349C19AC5774004EAC04 /* zhuye_03@2x.png in Resources */,
@@ -548,6 +605,7 @@
 				643B34A519AC5774004EAC04 /* zhuye_31@2x.png in Resources */,
 				643B349219AC5774004EAC04 /* quan5.png in Resources */,
 				643B33F419AC5510004EAC04 /* InfoPlist.strings in Resources */,
+				0F9A559319ACDB41009E2E5C /* icon_1@2x.png in Resources */,
 				643B347A19AC5774004EAC04 /* icon1 (1)@2x.png in Resources */,
 				643B348719AC5774004EAC04 /* jinru_06.png in Resources */,
 				643B348E19AC5774004EAC04 /* quan3.png in Resources */,
@@ -564,6 +622,7 @@
 				643B348B19AC5774004EAC04 /* quan11.png in Resources */,
 				643B347819AC5774004EAC04 /* head2@2x.png in Resources */,
 				643B34A019AC5774004EAC04 /* zhuye_23@2x.png in Resources */,
+				0F9A559519ACDB41009E2E5C /* icon_23@2x.png in Resources */,
 				643B348619AC5774004EAC04 /* jinru_03.png in Resources */,
 				643B348D19AC5774004EAC04 /* quan22.png in Resources */,
 				643B347F19AC5774004EAC04 /* icon1 (6)@2x.png in Resources */,
@@ -571,7 +630,6 @@
 				643B348519AC5774004EAC04 /* jingyin.png in Resources */,
 				643B349B19AC5774004EAC04 /* quan99@2x.png in Resources */,
 				643B34BE19AC849B004EAC04 /* fangdiu_leida@2x.png in Resources */,
-				643B348219AC5774004EAC04 /* icon_1.png in Resources */,
 				643B348A19AC5774004EAC04 /* quan1.png in Resources */,
 				643B34A319AC5774004EAC04 /* zhuye_29@2x.png in Resources */,
 				643B34C819AC85A5004EAC04 /* fangdiu_13@2x.png in Resources */,
@@ -593,18 +651,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F9A559E19ACEE5D009E2E5C /* CommonNavigationController.m in Sources */,
+				0F9A559B19ACE58E009E2E5C /* mioHJCell.m in Sources */,
+				0F9A558E19ACD737009E2E5C /* BEMLine.m in Sources */,
 				643B34B419AC7403004EAC04 /* BJImageCropper.m in Sources */,
 				643B342D19AC55A4004EAC04 /* LostViewController.m in Sources */,
+				0F9A559819ACE42D009E2E5C /* MioSettingViewController.m in Sources */,
 				643B342E19AC55A4004EAC04 /* MainViewController.m in Sources */,
 				643B34CE19AC8B1E004EAC04 /* recordAnnotation.m in Sources */,
 				643B343019AC55A4004EAC04 /* TemperatureViewController.m in Sources */,
+				0F9A558D19ACD737009E2E5C /* BEMCircle.m in Sources */,
 				643B34B019AC738A004EAC04 /* ImageCroperViewController.m in Sources */,
+				0F9A558F19ACD737009E2E5C /* BEMSimpleLineGraphView.m in Sources */,
+				0F9A55A719ACF1FB009E2E5C /* changePswCell.m in Sources */,
 				643B342F19AC55A4004EAC04 /* SettingViewController.m in Sources */,
 				643B33FA19AC5510004EAC04 /* AppDelegate.m in Sources */,
 				643B34AD19AC65B8004EAC04 /* UserInfoEditCell.m in Sources */,
+				0F9A55AA19ACF6A3009E2E5C /* CommonTabbarViewController.m in Sources */,
 				643B34BA19AC76E1004EAC04 /* UIColor+getColor.m in Sources */,
 				643B33F619AC5510004EAC04 /* main.m in Sources */,
+				0F9A558C19ACD737009E2E5C /* BEMAnimations.m in Sources */,
 				643B343119AC55A4004EAC04 /* UserInfoViewController.m in Sources */,
+				0F9A55A119ACF193009E2E5C /* ChangePasswordViewController.m in Sources */,
 				643B34A919AC624A004EAC04 /* UserInfoEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

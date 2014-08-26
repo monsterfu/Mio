@@ -1,18 +1,18 @@
 //
-//  MainViewController.m
+//  CommonNavigationController.m
 //  Mio
 //
-//  Created by 符鑫 on 14-8-26.
+//  Created by 符鑫 on 14-8-27.
 //  Copyright (c) 2014年 Monster. All rights reserved.
 //
 
-#import "MainViewController.h"
+#import "CommonNavigationController.h"
 
-@interface MainViewController ()
+@interface CommonNavigationController ()
 
 @end
 
-@implementation MainViewController
+@implementation CommonNavigationController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +27,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if (![self.navigationBar respondsToSelector:@selector(setBarTintColor:)])
+    {
+        self.navigationBar.tintColor = [UIColor getColor:@"63c463"];
+        self.navigationBar.translucent = NO;
+    }else{
+        self.navigationBar.barTintColor = [UIColor getColor:@"63c463"];
+        self.navigationBar.translucent = NO;
+    }
+    self.navigationBar.tintColor = [UIColor whiteColor];
+    //
+    [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor,
+                                                                     nil]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

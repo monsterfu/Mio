@@ -35,6 +35,10 @@
     if (_type == UserInfoEnum_Type2) {
         [_datePicker setHidden:NO];
     }
+    
+    UIImage* rightImg = [UIImage imageNamed:@"icon_2"];
+    UIBarButtonItem* _rightButton = [[UIBarButtonItem alloc]initWithImage:rightImg style:UIBarButtonItemStylePlain target:self action:@selector(rightButtonPressed)];
+    self.navigationItem.rightBarButtonItem = _rightButton;
 }
 
 - (void)didReceiveMemoryWarning
@@ -42,7 +46,10 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)rightButtonPressed
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 /*
 #pragma mark - Navigation
 
