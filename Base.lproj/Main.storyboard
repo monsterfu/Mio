@@ -193,7 +193,7 @@
                                     <action selector="searchButtonTouch:" destination="8e7-hE-iyT" eventType="touchUpInside" id="mtL-AM-D5Z"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="42s-nf-Vbp">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="42s-nf-Vbp">
                                 <rect key="frame" x="13" y="212" width="296" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>

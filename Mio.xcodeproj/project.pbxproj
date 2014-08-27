@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F14173419AE2E7F0019E90C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F14173319AE2E7F0019E90C /* CoreBluetooth.framework */; };
+		0F14173819AE2ECB0019E90C /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F14173719AE2ECB0019E90C /* ConnectionManager.m */; };
+		0F14173B19AE2EFE0019E90C /* deviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F14173A19AE2EFE0019E90C /* deviceInfo.m */; };
+		0F14173E19AE2F2D0019E90C /* locationCoordinateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F14173D19AE2F2D0019E90C /* locationCoordinateInfo.m */; };
+		0F14174119AE2F4F0019E90C /* deviceDisconnectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F14174019AE2F4F0019E90C /* deviceDisconnectInfo.m */; };
+		0F14174519AE2FF80019E90C /* NSString+deviceName.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F14174419AE2FF80019E90C /* NSString+deviceName.m */; };
 		0F9A558C19ACD737009E2E5C /* BEMAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558519ACD737009E2E5C /* BEMAnimations.m */; };
 		0F9A558D19ACD737009E2E5C /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558719ACD737009E2E5C /* BEMCircle.m */; };
 		0F9A558E19ACD737009E2E5C /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F9A558919ACD737009E2E5C /* BEMLine.m */; };
@@ -115,6 +121,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F14173319AE2E7F0019E90C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		0F14173619AE2ECB0019E90C /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		0F14173719AE2ECB0019E90C /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		0F14173919AE2EFE0019E90C /* deviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceInfo.h; sourceTree = "<group>"; };
+		0F14173A19AE2EFE0019E90C /* deviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceInfo.m; sourceTree = "<group>"; };
+		0F14173C19AE2F2D0019E90C /* locationCoordinateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locationCoordinateInfo.h; sourceTree = "<group>"; };
+		0F14173D19AE2F2D0019E90C /* locationCoordinateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationCoordinateInfo.m; sourceTree = "<group>"; };
+		0F14173F19AE2F4F0019E90C /* deviceDisconnectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceDisconnectInfo.h; sourceTree = "<group>"; };
+		0F14174019AE2F4F0019E90C /* deviceDisconnectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceDisconnectInfo.m; sourceTree = "<group>"; };
+		0F14174319AE2FF80019E90C /* NSString+deviceName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+deviceName.h"; sourceTree = "<group>"; };
+		0F14174419AE2FF80019E90C /* NSString+deviceName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+deviceName.m"; sourceTree = "<group>"; };
 		0F9A558419ACD737009E2E5C /* BEMAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAnimations.h; sourceTree = "<group>"; };
 		0F9A558519ACD737009E2E5C /* BEMAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAnimations.m; sourceTree = "<group>"; };
 		0F9A558619ACD737009E2E5C /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
@@ -243,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F14173419AE2E7F0019E90C /* CoreBluetooth.framework in Frameworks */,
 				643B34CA19AC863F004EAC04 /* MapKit.framework in Frameworks */,
 				643B33EC19AC5510004EAC04 /* CoreGraphics.framework in Frameworks */,
 				643B33EE19AC5510004EAC04 /* UIKit.framework in Frameworks */,
@@ -263,6 +281,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F14173519AE2ECB0019E90C /* bleConnect */ = {
+			isa = PBXGroup;
+			children = (
+				0F14173F19AE2F4F0019E90C /* deviceDisconnectInfo.h */,
+				0F14174019AE2F4F0019E90C /* deviceDisconnectInfo.m */,
+				0F14173C19AE2F2D0019E90C /* locationCoordinateInfo.h */,
+				0F14173D19AE2F2D0019E90C /* locationCoordinateInfo.m */,
+				0F14173919AE2EFE0019E90C /* deviceInfo.h */,
+				0F14173A19AE2EFE0019E90C /* deviceInfo.m */,
+				0F14173619AE2ECB0019E90C /* ConnectionManager.h */,
+				0F14173719AE2ECB0019E90C /* ConnectionManager.m */,
+			);
+			path = bleConnect;
+			sourceTree = "<group>";
+		};
+		0F14174219AE2FF80019E90C /* NSString+deviceName */ = {
+			isa = PBXGroup;
+			children = (
+				0F14174319AE2FF80019E90C /* NSString+deviceName.h */,
+				0F14174419AE2FF80019E90C /* NSString+deviceName.m */,
+			);
+			path = "NSString+deviceName";
+			sourceTree = "<group>";
+		};
 		0F9A558319ACD737009E2E5C /* BemLine */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +342,7 @@
 		643B33E819AC5510004EAC04 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F14173319AE2E7F0019E90C /* CoreBluetooth.framework */,
 				643B34C919AC863F004EAC04 /* MapKit.framework */,
 				643B33E919AC5510004EAC04 /* Foundation.framework */,
 				643B33EB19AC5510004EAC04 /* CoreGraphics.framework */,
@@ -312,6 +355,7 @@
 		643B33EF19AC5510004EAC04 /* Mio */ = {
 			isa = PBXGroup;
 			children = (
+				0F14173519AE2ECB0019E90C /* bleConnect */,
 				643B34CB19AC8B00004EAC04 /* Model */,
 				643B34B119AC73C0004EAC04 /* ThirdParty */,
 				643B34AA19AC658F004EAC04 /* Views */,
@@ -468,6 +512,7 @@
 		643B34B119AC73C0004EAC04 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				0F14174219AE2FF80019E90C /* NSString+deviceName */,
 				0F9A558319ACD737009E2E5C /* BemLine */,
 				643B34B719AC76E1004EAC04 /* UIColor+getColor */,
 				643B34B219AC7403004EAC04 /* BJImageCropper.h */,
@@ -655,16 +700,20 @@
 				0F9A559B19ACE58E009E2E5C /* mioHJCell.m in Sources */,
 				0F9A558E19ACD737009E2E5C /* BEMLine.m in Sources */,
 				643B34B419AC7403004EAC04 /* BJImageCropper.m in Sources */,
+				0F14174519AE2FF80019E90C /* NSString+deviceName.m in Sources */,
 				643B342D19AC55A4004EAC04 /* LostViewController.m in Sources */,
 				0F9A559819ACE42D009E2E5C /* MioSettingViewController.m in Sources */,
 				643B342E19AC55A4004EAC04 /* MainViewController.m in Sources */,
 				643B34CE19AC8B1E004EAC04 /* recordAnnotation.m in Sources */,
+				0F14173E19AE2F2D0019E90C /* locationCoordinateInfo.m in Sources */,
 				643B343019AC55A4004EAC04 /* TemperatureViewController.m in Sources */,
+				0F14173819AE2ECB0019E90C /* ConnectionManager.m in Sources */,
 				0F9A558D19ACD737009E2E5C /* BEMCircle.m in Sources */,
 				643B34B019AC738A004EAC04 /* ImageCroperViewController.m in Sources */,
 				0F9A558F19ACD737009E2E5C /* BEMSimpleLineGraphView.m in Sources */,
 				0F9A55A719ACF1FB009E2E5C /* changePswCell.m in Sources */,
 				643B342F19AC55A4004EAC04 /* SettingViewController.m in Sources */,
+				0F14174119AE2F4F0019E90C /* deviceDisconnectInfo.m in Sources */,
 				643B33FA19AC5510004EAC04 /* AppDelegate.m in Sources */,
 				643B34AD19AC65B8004EAC04 /* UserInfoEditCell.m in Sources */,
 				0F9A55AA19ACF6A3009E2E5C /* CommonTabbarViewController.m in Sources */,
@@ -673,6 +722,7 @@
 				0F9A558C19ACD737009E2E5C /* BEMAnimations.m in Sources */,
 				643B343119AC55A4004EAC04 /* UserInfoViewController.m in Sources */,
 				0F9A55A119ACF193009E2E5C /* ChangePasswordViewController.m in Sources */,
+				0F14173B19AE2EFE0019E90C /* deviceInfo.m in Sources */,
 				643B34A919AC624A004EAC04 /* UserInfoEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
